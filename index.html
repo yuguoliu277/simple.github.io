@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>劉雨果 | 个人简历</title>
+	<style>
+		/* ===== 整体样式（想换主题色改 #2c5f8a）===== */
+		:root { --main-color: #2c5f8a; }
+		html { scroll-behavior: smooth; }   /* 点击导航平滑滚动 */
+		body {
+			font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+			margin: 0;
+			color: #333;
+			background: #f5f5f5;
+			line-height: 1.8;
+		}
+
+		/* ===== 顶部导航栏（点击可跳转）===== */
+		nav {
+			position: sticky;          /* 滚动时固定在顶部 */
+			top: 0;
+			background: var(--main-color);
+			padding: 12px 20px;
+			text-align: center;
+			z-index: 100;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 14px;
+			font-size: 0.95em;
+			opacity: 0.9;
+		}
+		nav a:hover { opacity: 1; text-decoration: underline; }
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			background: #fff;
+			padding: 40px 60px;
+		}
+
+		/* ===== 页头 ===== */
+		header {
+			text-align: center;
+			border-bottom: 3px solid var(--main-color);
+			padding-bottom: 20px;
+			margin-bottom: 30px;
+		}
+		header h1 { margin: 0; font-size: 2.2em; color: var(--main-color); }
+		header p.sub { margin: 8px 0 0; color: #666; font-size: 1.05em; }
+		.contact-line { margin-top: 10px; font-size: 0.95em; color: #555; }
+		.contact-line a { color: var(--main-color); text-decoration: none; }
+
+		/* ===== 板块 ===== */
+		section {
+			margin-bottom: 35px;
+			scroll-margin-top: 60px;   /* 跳转时不被导航栏挡住标题 */
+		}
+		h2 {
+			font-size: 1.3em;
+			color: var(--main-color);
+			border-left: 5px solid var(--main-color);
+			padding-left: 12px;
+			margin-bottom: 15px;
+		}
+
+		/* ===== 经历条目 ===== */
+		.item { margin-bottom: 18px; }
+		.item-head { display: flex; justify-content: space-between; flex-wrap: wrap; }
+		.item-title { font-weight: bold; font-size: 1.05em; }
+		.item-date { color: #888; font-size: 0.9em; }
+		ul { margin: 6px 0; padding-left: 22px; }
+
+		/* ===== 技能标签 ===== */
+		.tags span {
+			display: inline-block;
+			background: #e8f0f7;
+			color: var(--main-color);
+			border-radius: 4px;
+			padding: 3px 12px;
+			margin: 4px 6px 4px 0;
+			font-size: 0.9em;
+		}
+
+		footer {
+			text-align: center;
+			color: #999;
+			font-size: 0.85em;
+			border-top: 1px solid #eee;
+			padding-top: 20px;
+		}
+
+		@media (max-width: 600px) {
+			.container { padding: 24px 20px; }
+			nav a { margin: 0 8px; font-size: 0.85em; }
+		}
+	</style>
+</head>
+<body>
+
+	<!-- ========== 可点击导航栏 ========== -->
+	<nav>
+		<a href="#top">首页</a>
+		<a href="#education">教育背景</a>
+		<a href="#projects">项目经历</a>
+		<a href="#skills">技能</a>
+		<a href="#about">关于我</a>
+		<a href="#contact">联系我</a>
+	</nav>
+
+	<div class="container" id="top">
+
+		<!-- ========== 页头 ========== -->
+		<header>
+			<h1>劉雨果</h1>
+			<p class="sub">博士生 · 你的研究方向</p>
+			<p class="contact-line">
+				📧 <a href="mailto:your_email@example.com">your_email@example.com</a>
+				&nbsp;|&nbsp;
+				🔗 <a href="https://github.com/yuguoliu277" target="_blank">github.com/yuguoliu277</a>
+			</p>
+		</header>
+
+		<!-- ========== 教育背景 ========== -->
+		<section id="education">
+			<h2>教育背景</h2>
+			<div class="item">
+				<div class="item-head">
+					<span class="item-title">某某大学 · 博士（专业名称）</span>
+					<span class="item-date">2023.09 – 至今</span>
+				</div>
+				<ul>
+					<li>研究方向：你的研究方向</li>
+					<li>导师：某某教授</li>
+				</ul>
+			</div>
+			<div class="item">
+				<div class="item-head">
+					<span class="item-title">某某大学 · 本科（专业名称）</span>
+					<span class="item-date">2019.09 – 2023.06</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========== 项目经历 ========== -->
+		<section id="projects">
+			<h2>项目经历</h2>
+			<div class="item">
+				<div class="item-head">
+					<span class="item-title">项目名称一</span>
+					<span class="item-date">2024.03 – 2024.12</span>
+				</div>
+				<ul>
+					<li>一句话描述这个项目做了什么、用了什么技术</li>
+					<li>取得了什么成果（论文/奖项/数据提升等）</li>
+				</ul>
+			</div>
+			<div class="item">
+				<div class="item-head">
+					<span class="item-title">项目名称二</span>
+					<span class="item-date">2023.06 – 2023.12</span>
+				</div>
+				<ul>
+					<li>项目描述……</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- ========== 技能 ========== -->
+		<section id="skills">
+			<h2>技能</h2>
+			<div class="tags">
+				<span>Python</span><span>MATLAB</span><span>LaTeX</span>
+				<span>机器学习</span><span>数据分析</span><span>英语（CET-6）</span>
+			</div>
+		</section>
+
+		<!-- ========== 关于我 ========== -->
+		<section id="about">
+			<h2>关于我</h2>
+			<p>这里写一段简短的自我介绍：你的研究兴趣、个人特点、职业目标等。</p>
+		</section>
+
+		<!-- ========== 联系我 ========== -->
+		<section id="contact">
+			<h2>联系我</h2>
+			<p>
+				📧 邮箱：<a href="mailto:your_email@example.com">your_email@example.com</a><br />
+				🔗 GitHub：<a href="https://github.com/yuguoliu277" target="_blank">github.com/yuguoliu277</a><br />
+				💬 微信：你的微信号（可选）
+			</p>
+		</section>
+
+		<footer>
+			© 2026 劉雨果 · 由 GitHub Pages 托管
+		</footer>
+
+	</div>
+</body>
+</html>
